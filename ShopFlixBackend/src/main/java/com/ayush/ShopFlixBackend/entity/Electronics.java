@@ -4,13 +4,13 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "products")
+@Table(name = "electronics")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Product {
+public class Electronics {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

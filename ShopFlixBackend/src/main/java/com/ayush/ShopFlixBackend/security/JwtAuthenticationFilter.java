@@ -35,13 +35,21 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
 
-        // here token come and we seprate username and token
+        String path = request.getServletPath();
+        // Bypass authentication for public endpoints (e.g., /api/search and /auth/**)
+        if (path.startsWith("/api/search") || path.startsWith("/auth/")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
+        // Extract the Authorization header
         String requestHeader = request.getHeader("Authorization");
         logger.info("Header: {}", requestHeader);
 
         String username = null;
         String token = null;
 
+        // If header is present and starts with "Bearer ", extract the token
         if (requestHeader != null && requestHeader.startsWith("Bearer ")) {
             token = requestHeader.substring(7);
             try {
@@ -59,9 +67,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             logger.warn("Invalid Authorization header value");
         }
 
-
-        // token mai se username nikalne ke bad yha pe check kr rhe hai username null nhi rhna chahiye
-        // and securityContext mai data tb jata hai jb ek bar authenticate ho jata hai it means av null hona chahiye
+        // If we got a username and no authentication is set in the security context, authenticate the user
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
             boolean validateToken = this.jwtHelper.validateToken(token, userDetails);
@@ -75,6 +81,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             }
         }
 
+        // Continue with the filter chain
         filterChain.doFilter(request, response);
     }
+
+
 }

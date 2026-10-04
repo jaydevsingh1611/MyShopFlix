@@ -1,26 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89609c82-1ce4-416f-bde3-35032263c20a" name="Changes" comment="" />
+    <list default="true" id="89609c82-1ce4-416f-bde3-35032263c20a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/Repo/BeautyAndGroomingRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/Repo/KitchenStorageRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/Repo/SearchMovieRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/Repo/SearchProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/Repo/UserItemRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/Repo/WomensClothRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/Repo/electronictRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/Repo/movieRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/Repo/usersRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/ShopFlixBackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/config/Cors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/config/SpringDataWebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/controller/MoviesSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/controller/ProductSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/controller/UserItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/controller/shopflixController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/controller/usersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/BeautyAndGrooming.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/Electronics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/KitchenStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/MovieSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/ProductSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/UserItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/entity/WomensCloth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/model/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/model/AuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/security/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/security/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/security/JwtHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/services/KitchenStorageServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/services/SearchMoviesServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/services/SearchProductServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/services/UserItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/services/WomensClothServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/services/beautyAndGroomingServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/services/electronicServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/services/movieServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/services/usersServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopFlixBackend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/component/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/component/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/component/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/component/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/component/Logout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/component/Logout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/component/Movie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/component/Movie.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/component/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/component/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/component/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/component/Shop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/component/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/component/Signup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/component/Transfer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlix/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlix/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlixBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlixBackend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlixBackend/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlixBackend/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopFlixBackend/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShopFlixBackend/ShopFlixBackend/src/main/java/com/ayush/ShopFlixBackend/controller/AuthController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;githubayushraj&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/githubayushraj/ShopFlix.git",
+    "accountId": "f2d374a6-f21e-4736-9cfd-635e015b0bbc"
+  }
 }]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2tDaP4p4c2Ta8443gr9tCxcpFew" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,5 +115,16 @@
       <updated>1739889071805</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

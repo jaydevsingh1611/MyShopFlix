@@ -12,17 +12,17 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "user_items") // Explicitly specify table name
+@Table(name = "user_items")
 public class UserItems {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(nullable = false)
-    private Long userId;  // Follow camelCase naming conventions
+    @Column(name = "user_id", nullable = false)
+    private Long userId;
 
-    @Column(nullable = false)
+    @Column(name = "item_id", nullable = false)
     private Long itemId;
 
     @Enumerated(EnumType.STRING)
@@ -35,7 +35,7 @@ public class UserItems {
     private LocalDateTime addedAt = LocalDateTime.now();
 
     @ManyToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "user_id", referencedColumnName = "id", insertable = false, updatable = false) // Fixed
     private Users user;
 
     public enum Category {
